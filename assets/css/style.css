@@ -1,3 +1,143 @@
+/* Education Section */
+.education-section {
+    padding: 3rem 0;
+    background: #ffffff;
+}
+
+.education-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.section-title {
+    margin-bottom: 2rem;
+}
+
+.education-card {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 102, 255, 0.08);
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.education-card:hover {
+    transform: translateY(-3px);
+}
+
+.education-content {
+    padding: 1.5rem;
+}
+
+.education-header {
+    margin-bottom: 1rem;
+}
+
+.education-header h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0.3rem;
+    line-height: 1.2;
+}
+
+.education-header h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.3rem;
+}
+
+.university-name {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+}
+
+.education-meta {
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.8rem;
+}
+
+.year, .grade {
+    display: inline-block;
+    padding: 0.3rem 0.6rem;
+    background: rgba(0, 102, 255, 0.08);
+    color: var(--primary-color);
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.skills-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+.skill-tag {
+    background: rgba(0, 102, 255, 0.08);
+    color: var(--primary-color);
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+.thesis-section, .research-section, .activities-section {
+    margin-top: 1rem;
+}
+
+.thesis-section h5, .research-section h5, .activities-section h5 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.thesis-section p, .activities-section p {
+    color: var(--text-secondary);
+    line-height: 1.5;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.research-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.research-list li {
+    position: relative;
+    padding-left: 1rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    font-size: 0.9rem;
+}
+
+.research-list li:last-child {
+    margin-bottom: 0;
+}
+
+.research-list li:before {
+    content: "•";
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
 /* Global Styles */
 :root {
     --primary-color: #0066ff;
@@ -128,158 +268,6 @@ body {
     font-weight: 500;
     color: var(--secondary-color);
     margin-bottom: 0.5rem;
-}
-
-/* Education Section */
-.education-section {
-    padding: 5rem 0;
-    background: #ffffff;
-}
-
-.education-container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-.education-item {
-    width: 100%;
-}
-
-.education-card {
-    background: var(--card-bg);
-    border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(0, 102, 255, 0.08);
-    padding: 2rem;
-    transition: all 0.3s ease;
-    border: 1px solid rgba(0, 102, 255, 0.1);
-}
-
-.education-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 30px rgba(0, 102, 255, 0.12);
-}
-
-.education-main {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    align-items: flex-start;
-}
-
-.education-header {
-    flex: 0 0 auto;
-    width: 200px;
-}
-
-.education-info {
-    flex: 1;
-    min-width: 300px;
-}
-
-.education-details {
-    flex: 2;
-    min-width: 400px;
-}
-
-.year {
-    display: inline-block;
-    padding: 0.5rem 1.5rem;
-    background: var(--gradient-primary);
-    color: white;
-    border-radius: 25px;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    font-size: 1rem;
-}
-
-.education-card h3 {
-    font-size: 1.5rem;
-    color: var(--text-primary);
-    margin-bottom: 0.5rem;
-    font-weight: 700;
-    line-height: 1.2;
-}
-
-.education-card h4 {
-    font-size: 1.1rem;
-    color: var(--text-secondary);
-    margin-bottom: 1rem;
-    font-weight: 500;
-}
-
-.specialization {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.badge {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    background: rgba(0, 102, 255, 0.08);
-    color: var(--primary-color);
-    border-radius: 20px;
-    font-weight: 500;
-    font-size: 0.9rem;
-    white-space: nowrap;
-}
-
-.research {
-    margin-bottom: 1rem;
-}
-
-.research h5 {
-    color: var(--text-primary);
-    margin-bottom: 0.5rem;
-    font-weight: 600;
-    font-size: 1rem;
-}
-
-.research p {
-    color: var(--text-secondary);
-    line-height: 1.5;
-    margin-bottom: 0.5rem;
-}
-
-.course-tags, .skill-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-}
-
-.course-tags span, .skill-tags span {
-    padding: 0.5rem 1rem;
-    background: rgba(0, 102, 255, 0.08);
-    color: var(--primary-color);
-    border-radius: 20px;
-    font-size: 0.9rem;
-    font-weight: 500;
-}
-
-.activities p {
-    color: var(--text-secondary);
-    margin-top: 0.5rem;
-}
-
-/* Responsive */
-@media (max-width: 1024px) {
-    .education-main {
-        flex-direction: column;
-    }
-    
-    .education-header, .education-info, .education-details {
-        width: 100%;
-        min-width: 100%;
-    }
-    
-    .specialization {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
 }
 
 /* Skills Section */
@@ -1309,6 +1297,7 @@ body {
     width: calc(50% - 30px);
     opacity: 0;
     transform: translateY(20px);
+    animation: slideIn 0.6s ease forwards;
 }
 
 .timeline-item.animate {
@@ -1431,6 +1420,7 @@ body {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(0, 102, 255, 0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
 .navbar-brand {
@@ -1472,7 +1462,7 @@ body {
 /* Scroll Animation */
 .scroll-indicator {
     position: fixed;
-    top: 50%;
+    bottom: 20px;
     right: 30px;
     transform: translateY(-50%);
     z-index: 100;
@@ -1683,8 +1673,6 @@ body {
 
 .achievements ul li::before, .research ul li::before {
     content: '→';
-    position: absolute;
-    left: 0;
     color: var(--primary-color);
 }
 
