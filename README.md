@@ -1,47 +1,44 @@
 # Personal Portfolio Website
 
-A modern, responsive personal portfolio website built with HTML5, CSS3, and JavaScript.
+A modern, responsive portfolio website showcasing my expertise in Materials Engineering and Artificial Intelligence.
 
 ## Features
 
-- Responsive design that works on all devices
-- Clean and modern UI
-- Smooth scrolling navigation
-- Skills and projects showcase
-- Contact form
-- Social media integration
-- Animated sections
-- Bootstrap 5 framework
+- Clean, modern design with smooth animations
+- Responsive layout that works on all devices
+- Sections for Education, Skills, Professional Experience, and Contact
+- Built with HTML5, CSS3, and JavaScript
+- Uses Bootstrap for responsive design
+- Includes AOS (Animate On Scroll) for smooth animations
 
-## Structure
+## View Live
 
-```
-portfolio/
-├── assets/
-│   ├── css/
-│   │   └── style.css
-│   ├── js/
-│   │   └── main.js
-│   └── images/
-├── index.html
-└── README.md
-```
+Visit the live website at: [https://metalsrini.github.io/portfolio](https://metalsrini.github.io/portfolio)
 
-## Customization
+## Local Development
 
-1. Replace "Your Name" with your actual name throughout the files
-2. Add your personal bio in the About section
-3. Update the Skills section with your actual skills
-4. Add your project details and images
-5. Update contact information and social media links
-6. Add your own images to the assets/images directory
+To run this website locally:
 
-## Setup
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/metalsrini/portfolio.git
+   ```
 
-1. Clone or download this repository
-2. Add your personal information and customize the content
-3. Add your images to the assets/images directory
-4. Deploy to your preferred hosting service
+2. Open the project folder:
+   ```bash
+   cd portfolio
+   ```
+
+3. Open `index.html` in your browser
+
+## Deployment
+
+This website is deployed using GitHub Pages. To deploy your own version:
+
+1. Fork this repository
+2. Go to repository Settings > Pages
+3. Select your main branch as the source
+4. Your site will be published at `https://[your-username].github.io/portfolio`
 
 ## Technologies Used
 
@@ -49,4 +46,10 @@ portfolio/
 - CSS3
 - JavaScript
 - Bootstrap 5
-- Font Awesome Icons
+- Font Awesome
+- AOS (Animate On Scroll)
+- Google Fonts (Inter)
+
+## License
+
+This project is open source and available under the MIT License.
